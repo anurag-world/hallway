@@ -29,13 +29,13 @@
   <meta property="og:title" content="Hallway - Talent Management, Public Relations, Events N Entertainment, Social Responsibility" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="" />
-  <meta property="og:image" content="http://www.hallway.in/images/logo_fb.jpg" />
+  <meta property="og:image" content="images/logo.jpg" />
   <meta property="og:site_name" content="Hallway" />
   <meta property="fb:app_id" content="325874307450541" />
 
   <title>Hallway - Talent Management, Public Relations, Events N Entertainment, Social Responsibility</title>
 
-<body class="bg-black">
+<body class="bg-dark">
 
     <!-- Navigation -->
 
@@ -50,30 +50,30 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav nav-text">
+          <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link ms-1 active" href="{{ url('/') }}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
+              <a class="nav-link ms-1" href="{{ url('/') }}">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Talent Management</a>
+              <a class="nav-link ms-1" href="{{ url('/') }}">Talent Management</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Public Relations</a>
+              <a class="nav-link ms-1" href="{{ url('/') }}">Public Relations</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Events N Entertainment</a>
+              <a class="nav-link ms-1" href="{{ url('/') }}">Events N Entertainment</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Social Responsibility</a>
+              <a class="nav-link ms-1" href="{{ url('/') }}">Social Responsibility</a>
             </li>
             <!-- <li class="nav-item">
               <a class="nav-link" href="#">Gallery</a>
             </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact Us</a>
+              <a class="nav-link" href="{{ url('/') }}">Contact Us</a>
             </li>
 
           </ul>
@@ -85,7 +85,7 @@
 
 @section ('slide')
 
-<div class="container-fluid no-padding">
+<div class="container-fluid p-0">
 
   <div id=" carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
   <ol class="carousel-indicators">
@@ -130,15 +130,15 @@
 
     <div class="col col-lg-6 col-sm-12 text-center">
 
-      <img src="images/sec-01.jpg" class="img-fluid rounded sec-img" alt="Section-Image">
+      <img src="images/sec-01.jpg" class="img-fluid rounded my-5" alt="Section-Image">
 
     </div>
 
-    <div class="col col-lg-6 col-sm-12 sec-text">
+    <div class="col col-lg-6 col-sm-12 text-center px-5 my-5">
 
-      <h1 class="display-6 text-red">WHO WE ARE</h1>
+      <h1 class="display-6 text-red mb-4">WHO WE ARE</h1>
 
-      <p class="lead margin-top">HALLWAY is a Mumbai-based talent management, public relations and event management company that caters to local, national and international clients. Our services encompass Artist / Talent Management, Individual and Corporate
+      <p class="lead fw-normal">HALLWAY is a Mumbai-based talent management, public relations and event management company that caters to local, national and international clients. Our services encompass Artist / Talent Management, Individual and Corporate
         Public Relations
         (PR) and Event Management. We work with clients who seek intelligent strategies and clever publicity to capture market share for their brands and themselves and desire events with sheer excellence.</p>
 
@@ -153,13 +153,13 @@
 
 
 
-  <div class="row justify-content-center bg-black">
+  <div class="row justify-content-center bg-dark">
 
-    <div class="col col-lg-6 col-sm-12 sec-text">
+    <div class="col col-lg-6 col-sm-12 text-center px-5 my-5">
 
-      <h1 class="display-6 text-red">WHAT MAKES US DIFFERENT?</h1>
+      <h1 class="display-6 text-red mb-4">WHAT MAKES US DIFFERENT?</h1>
 
-      <p class="lead margin-top text-white">HALLWAY isn’t your average Artist, PR and Event Management Company. The market is fierce and competitive, and every company out there claims to be ‘innovative’, ‘strategic’, ‘passionate’ and ‘dynamic’. What we’re about is
+      <p class="lead fw-normal text-white">HALLWAY isn’t your average Artist, PR and Event Management Company. The market is fierce and competitive, and every company out there claims to be ‘innovative’, ‘strategic’, ‘passionate’ and ‘dynamic’. What we’re about is
         results:
         We work with
         the end goal in site. If you’re looking for Artist management, PR coverage and a well-thought-through event management, HALLWAY will deliver.</p>
@@ -168,7 +168,7 @@
 
     <div class="col col-lg-6 col-sm-12 text-center">
 
-      <img src="images/sec-02.jpg" class="img-fluid rounded sec-img" alt="Section-Image">
+      <img src="images/sec-02.jpg" class="img-fluid rounded my-5" alt="Section-Image">
 
     </div>
 
@@ -185,15 +185,15 @@
 
       <div class="col col-lg-6 col-sm-12 text-center">
 
-        <img src="images/sec-03.jpg" class="img-fluid rounded sec-img" alt="Section-Image">
+        <img src="images/sec-03.jpg" class="img-fluid rounded my-5" alt="Section-Image">
 
       </div>
 
-      <div class="col col-lg-6 col-sm-12 sec-text">
+      <div class="col col-lg-6 col-sm-12 text-center px-5 my-5">
 
-        <h1 class="display-6 text-red">WHAT DO WE DO?</h1>
+        <h1 class="display-6 text-red mb-4">WHAT DO WE DO?</h1>
 
-        <p class="lead margin-top">HALLWAY specializes in client-tailored advice and offers a range of services, including: artist and celebrity management, media relations, publicity, event management and social media initiatives to name a few.
+        <p class="lead fw-normal">HALLWAY specializes in client-tailored advice and offers a range of services, including: artist and celebrity management, media relations, publicity, event management and social media initiatives to name a few.
         </p>
       </div>
 
@@ -209,43 +209,49 @@
 
 <div class="container-fluid bg-red">
 
-  <div class="test-header text-center">
-    <h1 class="display-6 text-white">Testimonials</h1>
-  </div>
+  <div class="row justify-content-center">
 
-  <div id=" carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-      <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-    </ol>
+    <div class="col-lg-6">
 
-    <div class="carousel-inner testimonial">
-      <div class="carousel-item active">
+      <div class="text-center my-5">
+        <h1 class="display-6 text-white">Testimonials</h1>
+      </div>
 
-        <figure class="text-center">
-          <blockquote class="blockquote">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tempus egestas sed sed risus pretium.
-            </p>
-          </blockquote>
-          <blockquote class="blockquote">
-            <img src="images/dog-img.jpg" class="img-fluid profile" alt="profile">
-          </blockquote>
-          <figcaption class="blockquote-footer margin-top text-white">
-            Someone famous in <cite title="Source Title">Source Title</cite>
-          </figcaption>
-        </figure>
+      <div id=" carouselExampleIndicators" class="carousel slide my-4" data-bs-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+          <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+        </ol>
 
+        <div class="carousel-inner text-white py-5">
+          <div class="carousel-item active">
+
+            <figure class="text-center">
+              <blockquote class="blockquote">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis vel eros donec ac odio tempor orci dapibus ultrices. Tempus egestas sed sed risus pretium.
+                </p>
+              </blockquote>
+              <blockquote class="blockquote">
+                <img src="images/dog-img.jpg" class="img-fluid profile" alt="profile">
+              </blockquote>
+              <figcaption class="blockquote-footer mt-2 text-white">
+                Someone famous in <cite title="Source Title">Source Title</cite>
+              </figcaption>
+            </figure>
+
+          </div>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </a>
       </div>
     </div>
-
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    </a>
   </div>
 
 </div>
@@ -254,18 +260,24 @@
 
 <div class="container-fluid bg-light">
 
-  <div class="test-header text-center">
-    <h1 class="display-6 text-red">Press Releases</h1>
+  <div class="row justify-content-center">
+
+    <div class="col-lg-12 text-center my-5">
+
+      <h1 class="display-6 text-red">Press Releases</h1>
+
+    </div>
+
+    <div class="col-lg-6 text-center my-5">
+
+      <img class="press-logo img-fluid mx-3" src="images/techcrunch.png" alt="tc-logo">
+      <img class="press-logo img-fluid mx-3" src="images/tnw.png" alt="tnw-logo">
+      <img class="press-logo img-fluid mx-3" src="images/bizinsider.png" alt="biz-insider-logo">
+      <img class="press-logo img-fluid mx-3" src="images/mashable.png" alt="mashable-logo">
+
+    </div>
+
   </div>
-
-  <section class="press">
-
-    <img class="press-logo" src="images/techcrunch.png" alt="tc-logo">
-    <img class="press-logo" src="images/tnw.png" alt="tnw-logo">
-    <img class="press-logo" src="images/bizinsider.png" alt="biz-insider-logo">
-    <img class="press-logo" src="images/mashable.png" alt="mashable-logo">
-
-  </section>
 
 </div>
 
@@ -277,29 +289,29 @@
 <!-- Option 1: Bootstrap Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
-<section class="footer">
-
   <div class="container-fluid">
 
-    <nav class="nav justify-content-center">
-      <a class="nav-link link-light" href="#" target="_parent">Home</a>
-      <a class="nav-link link-light" href="#" target="_parent">Talent Management</a>
-      <a class="nav-link link-light" href="#" target="_parent">Public Relations</a>
-      <a class="nav-link link-light" href="#" target="_parent">Events n Entertainment</a>
-      <a class="nav-link link-light" href="#" target="_parent">Social Responsibility</a>
-      <a class="nav-link link-light" href="#" target="_parent">Gallery</a>
-      <a class="nav-link link-light" href="#" target="_parent">Contact Us</a>
-    </nav>
+    <div class="row">
 
-  </div>
+      <div class="col p-4">
 
-  <div class="container-fluid margin-top">
+        <nav class="nav justify-content-center mb-3">
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Home</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Talent Management</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Public Relations</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Events n Entertainment</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Social Responsibility</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Gallery</a>
+          <a class="nav-link link-light" href="{{ url('/') }}" target="_parent">Contact Us</a>
+        </nav>
 
-    <p class="lead fs-6 text-center text-white">HALLWAY &#8482; All Rights Reserved.</p>
+        <p class="lead fs-6 fw-normal text-center text-white">HALLWAY &#8482; All Rights Reserved.</p>
 
-  </div>
+      </div>
 
-</section>
+    </div>
+
+</div>
 
 </body>
 
